@@ -20,7 +20,7 @@ end
 operator = ARGV.shift
 operands = ARGV
 
-if operands.any? { |n| n !~ /\d+/ }
+if operands.any? { |n| n !~ /^\d+$/ }
   STDERR.puts "Error in Arguments"
   exit
 end
